@@ -8,5 +8,8 @@ class Game
 
   def next_player
     @current_player += 1
+    if @current_player >= @players.count
+      @current_player = 0
+    end
   end
 end
