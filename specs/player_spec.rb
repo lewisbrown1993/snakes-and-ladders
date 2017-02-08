@@ -1,6 +1,7 @@
 require("minitest/autorun")
 require("minitest/rg")
 require_relative("../player.rb")
+require_relative("../gamepiece.rb")
 
 class TestPlayer < MiniTest::Test
 
@@ -14,6 +15,10 @@ class TestPlayer < MiniTest::Test
 
   def test_player_has_name
     assert_equal("Englebert", @player.name)
+  end
+
+  def test_player_has_gamepiece
+    assert_equal(Gamepiece, @player.gamepiece.class)
   end
 
 end
