@@ -6,4 +6,5 @@ class Feature
     @end_position = end_position
     @type = type
   end
+  
 end

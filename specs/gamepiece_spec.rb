@@ -1,10 +1,19 @@
 require("minitest/autorun")
 require("minitest/rg")
 require_relative("../gamepiece.rb")
+require_relative("../feature.rb")
+require_relative("../game.rb")
+require_relative("../player.rb")
+require_relative("../board.rb")
+require_relative("../square.rb")
 
-class TestGamepiece < Minitest::Test
+class TestGamepiece < MiniTest::Test
 
   def setup
+    @player1 = Player.new("Englebert")
+    @player2 = Player.new("Humperdinck")
+    @game = Game.new([@player1, @player2])
+
     @gamepiece = Gamepiece.new
   end
 
@@ -21,4 +30,4 @@ class TestGamepiece < Minitest::Test
     assert_equal(2, @gamepiece.position)
   end
 
-  end
+end

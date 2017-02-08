@@ -3,7 +3,7 @@ class Dice
   attr_reader :value
 
   def initialize
-    @value = nil
+    @value = nil # not, I suppose, really needed
   end
 
   def roll

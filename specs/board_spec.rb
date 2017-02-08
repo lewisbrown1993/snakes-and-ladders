@@ -32,7 +32,7 @@ class TestBoard < Minitest::Test
   end
 
   def test_square_has_feature__false
-    assert_equal(false, @board.square_has_feature?(74))
+    assert_equal(false, @board.square_has_feature?(1))
   end
 
-  end
+end

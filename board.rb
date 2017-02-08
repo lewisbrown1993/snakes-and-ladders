@@ -4,11 +4,9 @@ class Board
 
   def initialize()
     @squares = Array.new(100, Square.new)
-    # @features = []
   end
 
   def add_feature(feature)
-    # @features << feature
     @squares[feature.start_position].add_feature(feature)
   end
 
