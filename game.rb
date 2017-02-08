@@ -5,4 +5,8 @@ class Game
     @players = players
     @current_player = 0
   end
+
+  def next_player
+    @current_player += 1
+  end
 end

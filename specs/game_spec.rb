@@ -25,4 +25,9 @@ def test_current_player
   assert_equal(0, @game.current_player)
 end
 
+def test_next_player
+  @game.next_player
+  assert_equal(1, @game.current_player)
+  end
+
 end
