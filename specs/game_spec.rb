@@ -21,4 +21,8 @@ def test_number_of_players
   assert_equal(2, @game.players.count)
   end
 
+def test_current_player
+  assert_equal(0, @game.current_player)
+end
+
 end
