@@ -2,9 +2,9 @@ require("minitest/autorun")
 require("minitest/rg")
 require_relative("../dice.rb")
 
-class TestDice < Minitest::Test
+class TestDice < MiniTest::Test
 
-  def setup()
+  def setup
     @dice = Dice.new()
   end
 
@@ -15,5 +15,7 @@ class TestDice < Minitest::Test
   def test_dice_starts_with_no_value
     assert_nil(Dice.new.value)
   end
+
+  # can't test roll (yet)
 
 end
