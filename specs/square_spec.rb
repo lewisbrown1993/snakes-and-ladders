@@ -8,8 +8,13 @@ class TestSquare < Minitest::Test
     @square = Square.new
   end
 
+  def has_feature
+    assert_nil(@square.feature)
+  end
+
   def test_can_create_square
     assert_equal(Square, @square.class())
   end
+
 
   end

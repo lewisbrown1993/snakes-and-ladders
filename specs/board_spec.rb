@@ -21,18 +21,18 @@ class TestBoard < Minitest::Test
     assert_equal(Square, @board.squares[0].class)
   end
 
-  def test_has_features
-    assert_equal(Array, @board.features.class)
-  end
-
   def test_add_feature
     @board.add_feature(@feature)
-    assert_equal(@feature, @board.features.last)
+    assert_equal(@feature, @board.squares[@feature.start_position].feature)
   end
 
+  def test_square_has_feature
+    @board.add_feature(@feature)
+    assert_equal(true, @board.square_has_feature?(5))
+  end
 
-  # def test_square_has_feature?
-  #   assert_equal(true, square_has_feature?(5))
-  # end
+  def test_square_has_feature__false
+    assert_equal(false, @board.square_has_feature?(74))
+  end
 
   end
