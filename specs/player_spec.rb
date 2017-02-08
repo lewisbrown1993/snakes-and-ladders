@@ -2,6 +2,8 @@ require("minitest/autorun")
 require("minitest/rg")
 require_relative("../player.rb")
 require_relative("../gamepiece.rb")
+# this next line only needed if we test_player_can_roll
+# require_relative("../dice.rb")
 
 class TestPlayer < MiniTest::Test
 
@@ -19,6 +21,10 @@ class TestPlayer < MiniTest::Test
 
   def test_player_has_gamepiece
     assert_equal(Gamepiece, @player.gamepiece.class)
+  end
+
+  def test_player_can_roll
+    # puts @player.roll_dice
   end
 
 end

@@ -7,4 +7,8 @@ class Player
     @gamepiece = Gamepiece.new
   end
 
+  def roll_dice
+    return Dice.new.roll
+  end
+
 end
