@@ -5,4 +5,8 @@ class Gamepiece
     @position = 0
   end
 
+  def move_to(new_position)
+    @position = new_position
+  end
+
 end

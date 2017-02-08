@@ -16,4 +16,9 @@ class TestGamepiece < Minitest::Test
     assert_equal(0, @gamepiece.position)
   end
 
+  def test_gamepiece_can_move
+    @gamepiece.move_to(2)
+    assert_equal(2, @gamepiece.position)
+  end
+
   end
