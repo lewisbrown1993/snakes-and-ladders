@@ -1,8 +1,9 @@
 class Feature
-  attr_reader :start_position, :end_position
+  attr_reader :type, :start_position, :end_position
 
-  def initialize(start_position, end_position)
+  def initialize(type, start_position, end_position)
     @start_position = start_position
     @end_position = end_position
+    @type = type
   end
 end
