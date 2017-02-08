@@ -1,7 +1,7 @@
 class Game
-  attr_reader :number_of_players
+  attr_reader :players
 
-  def initialize(number_of_players)
-    @number_of_players = number_of_players
+  def initialize(players)
+    @players = players
   end
 end
