@@ -7,6 +7,10 @@ class Board
     @features = []
   end
 
+  def add_feature(feature)
+    @features << feature
+  end
+
 
   # def square_has_feature?
 

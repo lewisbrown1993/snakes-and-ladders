@@ -26,7 +26,8 @@ class TestBoard < Minitest::Test
   end
 
   def test_add_feature
-
+    @board.add_feature(@feature)
+    assert_equal(@feature, @board.features.last)
   end
 
 
